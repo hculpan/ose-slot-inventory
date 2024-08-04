@@ -1,0 +1,25 @@
+<div class="modal-content">
+    <h2>Inventory Slots</h2>
+    <div class="oseslotinventory-centered">Available: {{ data.slotsAvailable }}</div>
+    <div class="oseslotinventory-centered">Occupied: {{ data.slotsOccupied }}</div>
+    <div class="oseslotinventory-centered">Remaining: {{ data.slotsRemaining }}</div>
+    <table class="oseslotinventory-styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Slots</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data.inventory}}
+            <tr>
+                <td>{{ this.name }}</td>
+                <td class="oseslotinventory-centered">{{ this.type }}</td>
+                <td class="oseslotinventory-centered">{{ this.slots }}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <button class="close-modal">Close</button>
+</div>

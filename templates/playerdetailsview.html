@@ -1,0 +1,31 @@
+<div class="modal-content">
+    <h2>Inventory Slots</h2>
+    <div class="flexrow oseslotinventory-custom-flex-container">
+        <button data-action="left-arrow"><i class='fa-solid fa-arrow-left left-arrow'></i></button>
+        <div class="oseslotinventory-centered-header">{{ data.name }}</div>
+        <button data-action="right-arrow"><i class='fa-solid fa-arrow-right right-arrow'></i></button>
+    </div>
+    <br>
+    <div class="oseslotinventory-centered">Available: {{ data.slotsAvailable }}</div>
+    <div class="oseslotinventory-centered">Occupied: {{ data.slotsOccupied }}</div>
+    <div class="oseslotinventory-centered">Remaining: {{ data.slotsRemaining }}</div>
+    <table class="oseslotinventory-styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Slots</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data.inventory}}
+            <tr>
+                <td>{{ this.name }}</td>
+                <td class="oseslotinventory-centered">{{ this.type }}</td>
+                <td class="oseslotinventory-centered">{{ this.slots }}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <button class="close-modal">Close</button>
+</div>

@@ -1,0 +1,104 @@
+  .oseslotinventory-init-text {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .oseslotinventory-init-label {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .oseslotinventory-round-label {
+    text-align: center; 
+    line-height: 25px;
+    margin-bottom: 8px; 
+  }
+
+  .oseslotinventory-box {
+    justify-content: center;
+    margin-bottom: 8px; 
+  }
+  
+  .oseslotinventory-button {
+    font-size: small;
+    max-height: 25px;
+    line-height: 15px;
+    max-width: 50px;
+  }
+
+  .oseslotinventory-round-button {
+    font-size: small;
+    max-height: 25px;
+    line-height: 15px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+  .oseslotinventory-form {
+    min-height: 55px;
+    max-height: 55px;
+  }
+
+  /* modules/my-module/styles.css */
+.oseslotinventory-styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.oseslotinventory-styled-table th, .oseslotinventory-styled-table td {
+  border: 1px solid black;
+  padding: 8px;
+  width: 33.33%; /* Ensure equal width for all columns */
+}
+
+.oseslotinventory-styled-table th {
+  background-color: black;
+}
+
+.oseslotinventory-centered {
+  text-align: center; /* Center text in the second and third columns */
+}
+
+.oseslotinventory-header {
+  font-size: larger;
+}
+
+.oseslotinventory-list-icon-button {
+  background: transparent;
+  padding: 0;
+  color: white;
+  line-height: normal;
+  border: 0;
+  align-self: center;
+}
+
+.oseslotinventory-list-icon-button > i {
+  margin-right: 0;
+}
+
+.oseslotinventory-list-icon-button:hover, .todo-list-icon-button:focus {
+  box-shadow: none;
+  text-shadow: 0 0 5px red;
+}
+
+.oseslotinventory-custom-flex-container {
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Align items vertically centered */
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.oseslotinventory-centered-header {
+  text-align: center; /* Center the text */
+  font-size: larger;
+  flex-grow: 1; /* Allow the text to grow and fill the space */
+}
+
+.left-arrow,
+.right-arrow {
+  flex: 0 0 auto; /* Prevent arrows from growing or shrinking */
+}
+
+.black {
+  color: black;
+}

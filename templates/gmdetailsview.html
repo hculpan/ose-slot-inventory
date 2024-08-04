@@ -1,0 +1,27 @@
+<div class="modal-content">
+    <h2>Inventory Slots</h2>
+    <table class="oseslotinventory-styled-table">
+        <thead>
+            <tr>
+                <th>Overloaded?</th>
+                <th>Player</th>
+                <th>Character</th>
+                <th>Slots Remaining</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+                <td class="oseslotinventory-centered">{{ this.overloaded }}</td>
+                <td> {{ this.playerName }}</td>
+                <td> {{ this.characterName }}</td>
+                <td class="oseslotinventory-centered">{{ this.slotsRemaining }}</td>
+                <td><button type='button' class='oseslotinventory-list-icon-button flex0 black'
+                        data-name="{{ this.playerName }}" title='${tooltip}'><i class='fas fa-tasks'></i></button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <button class="close-modal">Close</button>
+</div>
