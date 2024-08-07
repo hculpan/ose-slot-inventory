@@ -46,16 +46,10 @@ Hooks.on("updateActor", function () {
 
 function updatePage() {
   let inventory = getInventorySlotsForPlayer(game.users.current.id);
-  for (let i = 0; i < inventory.slotInfo; i++) {
+  for (let i = 0; i < inventory.slotInfo.length; i++) {
     let slots = inventory.slotInfo[i];
     if (slots.slotsRemaining < 0) {
       ui.notifications.warn(`${slots.name} is overloaded by ${Math.abs(slots.slotsRemaining)} slots`);
     }
   }
-  console.log("OSE Slot Inventory | Page update called");
-  console.log(inventory);
-  /*  for (let i = 0; i < inventory)
-  slots = get;
-  ui.notifications.warn("This is a warning message");
-  */
 }
