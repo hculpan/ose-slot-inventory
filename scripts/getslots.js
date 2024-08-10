@@ -134,7 +134,7 @@ export function getSlots(character) {
     let o = multipleItemsMap.get(key);
     if (o != undefined && o != null) {
       slots = o.floor ? Math.floor((value - 1) / o.number) : Math.ceil(value / o.number);
-      inventory.push({ name: `${o.name} (${value})`, type: o.type, slots: slots });
+      inventory.push({ name: `${o.name} (${value})`, type: o.type, slots: slots < 0 ? 0 : slots });
     }
 
     total += slots;
